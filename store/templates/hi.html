@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Toned Hello User</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ffcccc 50%, #ccccff 50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 20px;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello User</h1>
+    <div class="button-container">
+        <button onclick="button1Clicked()">Button 1</button>
+        <button onclick="button2Clicked()">Button 2</button>
+    </div>
+
+    <script>
+        function button1Clicked() {
+            alert('Button 1 clicked!');
+        }
+
+        function button2Clicked() {
+            alert('Button 2 clicked!');
+        }
+    </script>
+</body>
+
+</html>
